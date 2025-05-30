@@ -15,16 +15,26 @@ function cycle_through(arr){
     }
 }
 
-cycle_through(Costco_Menu);
+//cycle_through(Costco_Menu);
+
 
 var btn= document.getElementById("myButton");
+
+function doThings(event){
+    console.log(event);
+}
 
 for(var i=0;i<Costco_Menu.length;i++){
     var newBtn= btn.cloneNode(true);
     newBtn.innerHTML=Costco_Menu[i];
     document.body.append(newBtn);
 
-    newBtn.addEventListener("click", function(){
-        alert(Costco_Menu[i]);
-    });
+    newBtn.addEventListener("click", doThings);
 }
+
+
+
+
+
+
+
