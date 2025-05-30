@@ -67,13 +67,23 @@ for(var count = 0; count < FRAMES.length; count++ )
 
 
 alert("?????");
- var TEMP= document.getElementById("temp");
+
+var LIST=[
+    {},
+    {},
+    {},
+    {},
+    {}
+]
+
+var TEMP= document.getElementById("temp");
  var TARGET= document.getElementById("target");
 
  var CARD=TEMP.querySelector(".card");
 
  for(var count=0;count<5;count++){
     var copyCard=CARD.cloneNode(true);
+    copyCard.innerHTML="SILVER"+i;
     TARGET.append(copyCard);
 
  }
