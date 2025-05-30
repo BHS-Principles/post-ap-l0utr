@@ -38,3 +38,46 @@ for(var i=0;i<Costco_Menu.length;i++){
 
 
 
+
+
+
+
+
+
+
+
+
+var HTML = document.getElementById("myFrame");
+
+var doSomething = function(event, data){
+    console.log(event);
+    console.log(data);
+    alert("FRame me up before you go go");
+};
+
+for(var count = 0; count < FRAMES.length; count++ )
+{
+    var d = FRAMES[count];
+    var copy = HTML.cloneNode(true);
+    copy.addEventListener("click", (e)=>{ doSomething(e,d) } );
+
+    document.body.append(copy);
+
+}
+
+
+alert("?????");
+ var TEMP= document.getElementById("temp");
+ var TARGET= document.getElementById("target");
+
+ var FRAME=TEMP.querySelector(".frame");
+
+ for(var count=0;count<5;count++){
+    var frameCopy= FRAME.cloneNode(true);
+    TARGET.append();
+ }
+
+
+
+
+

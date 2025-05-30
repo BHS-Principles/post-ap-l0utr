@@ -1,2 +1,21 @@
-button{background-color: gray; color: white;}
-body{background-color: navy; color: white;}
+body{background-color: pink;}
+body *{
+    display: include-block;
+    position: relative;
+}
+
+.card{
+    background-color: blue;
+    width:10rem;
+    height: 15rem;
+    background-image: url(playing\ cards.svg);
+    background-size:1300%;
+    background-position: -100rem -15rem
+}
+z.card{
+    background-color: green;
+    display: inline-block;
+    position:relative;
+    
+
+}
