@@ -70,11 +70,12 @@ alert("?????");
  var TEMP= document.getElementById("temp");
  var TARGET= document.getElementById("target");
 
- var FRAME=TEMP.querySelector(".frame");
+ var CARD=TEMP.querySelector(".card");
 
  for(var count=0;count<5;count++){
-    var frameCopy= FRAME.cloneNode(true);
-    TARGET.append();
+    var copyCard=CARD.cloneNode(true);
+    TARGET.append(copyCard);
+
  }
 
 
